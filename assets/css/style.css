@@ -1,11 +1,12 @@
 body, html {
     height: 100%;
     margin: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
 
 .bg {
-    background-image:  url(""); 
+    background-image:  url("../images/Group-Nine-Shark-Week.jpg"); 
     z-index: -1;
     height: 100%; 
     background-position: center;
