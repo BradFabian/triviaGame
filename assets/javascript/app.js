@@ -3,6 +3,7 @@ $(document).ready(function() {
 // declare vars//
 var rightScore = 0;
 var wrongScore = 0;
+var triviaQuestions = "What is the worlds biggest Shark?";
 
 //onclick start timer and switch html//
 
