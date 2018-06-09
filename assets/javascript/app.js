@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
 // declare vars//
-
+var rightScore = 0;
+var wrongScore = 0;
 
 //onclick start timer and switch html//
 
