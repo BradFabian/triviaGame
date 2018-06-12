@@ -19,12 +19,12 @@ Score includes: time spent, answers correct, and answers wrong "score function" 
 $(document).ready(function() {
 
 // declare vars//
-var rightScore = 0;
+/*var rightScore = 0;
 var wrongScore = 0;
 var timer = setInterval(timerfunc,1000 * 60);
 function timerfunc() {
 
-}
+}*/
 
 var questions = [{
   ques: "What is the worlds biggest Shark?",
@@ -98,12 +98,15 @@ var questions = [{
 
 $(function() {
 
-    $("#startButton").on('click',function() {
-      
-      var content = '<tbody class= "text-white" "id= timer">'+ questions  +'</tbody>';
+   var startGame = $("#startButton").on('click',function() {
+      $(this).parent().hide();
+      $('.container-fluid').show();
+      countdown(60);
+      questionDisplay();
+      /*var content = '<tbody class= "text-white" "id= timer">'+ questions.ques  +'</tbody>';
       $('#mainText').replaceWith('<div class="jumbotron bg-info text-white" id="mainText">' + content + '</div>');
       console.log(content)
-      $('#timer').html(timer);
+      $('#timer').html(timer);*/
     });
   
   });
