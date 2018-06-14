@@ -28,8 +28,14 @@ body, html {
     margin-top: 15%;
     font-size: 21px;
 }
-.timeRemain #time-remain {
+.timeRemain{
+    text-align: center;
+}
+ #time-remain {
     font-size: 60px;
+    text-align: center;
+    margin: auto;
+    align-self: center;
     
     
 }
