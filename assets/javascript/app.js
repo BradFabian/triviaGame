@@ -100,7 +100,7 @@ var questionDisplay = function() {
   $('.questions').prepend('<div class="' + questions[j].name + '"></div>');
   $(questions[j].divClass).append('<div class ="ques-title">' + questions[j].ques + '</div>');
   // loops through answers for each radio button
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < 4; i++) {
       $(questions[j].divClass).append('<input type="radio"  name="' + questions[j].name + '" value="' + questions[j].ans[i] + '"/><label for="' + labels[i] + '">' + questions[j].ans[i] + '</label>');
   }
   $('.questions').prepend('<hr />');
@@ -170,7 +170,7 @@ var questionDisplay = function() {
   
   // once submit is clicked...
   // tests
-  gradeQuiz();
+  
   // stop timer
   countdown();
   // fade out questions
