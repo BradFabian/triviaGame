@@ -16,10 +16,83 @@ body, html {
 
 #timesUp {
     display: none;
+    background-color: navy;
+    
+    opacity: 0.8;
+    border-style: solid;
+    border: 1px;
+    color: aliceblue;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
+}
+.timeRemain #time-remain {
+    font-size: 60px;
+    
+    
+}
+.wrongBox{
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
 }
 .container{
+    height: 90%;
+    background-color: navy;
+    opacity: 0.5;
+    
+    
+    color: aliceblue;
     display: none;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+header {
+    font-size: 60px;
+    color: aliceblue;
+    margin-top: 2%;
+    text-align: center;
 }
 #answerScreen{
     display: none;
+    background-color: navy;
+    opacity: 0.8;
+    border-style: solid;
+    border: 1px;
+    color: aliceblue;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
+}
+.splashBox2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+
+#splashscreen{
+    background-color: navy;
+    opacity: 0.8;
+    border-style: solid;
+    border: 1px;
+    color: aliceblue;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+    
+}
+.splashBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+    margin-top: 40%;
 }
