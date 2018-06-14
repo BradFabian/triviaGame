@@ -96,3 +96,12 @@ header {
     padding: 4%;
     margin-top: 40%;
 }
+
+.questions {
+    font-size: 25px;
+}
+
+.ques,
+label {
+    padding: 1%;
+}
