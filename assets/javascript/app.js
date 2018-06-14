@@ -1,23 +1,4 @@
-
-/* 
-psuedo code
- 
-Click to Start "onclick function"
-Timer begins at 60 seconds and countdown "setInterval"
-Player goes through all 10 questions 
-player can only guess one answer per question
-Once completed, player submit's answers "loop/function"
-HTML is updated with users score ".html/.append"
-Score includes: time spent, answers correct, and answers wrong "score function" */
-
-
-//
-
-
-
-
-$(document).ready(function() {
-  var questions = [{
+    var questions = [{
     ques: "What is the worlds biggest Shark?",
     ans:["Great White","Hammer Head","Whale Shark","Bull Shark"],
     name:"bigShark",
@@ -114,12 +95,12 @@ var startGame = $("#startButton").on('click', function() {
 var questionDisplay = function() {
   $(".questions :not('#sub-but')").empty();
 
-  // loops through the 9 questions 
+  // loops through the 10 questions 
   for (var j = 0; j < 10; j++) {
   $('.questions').prepend('<div class="' + questions[j].name + '"></div>');
   $(questions[j].divClass).append('<div class ="ques-title">' + questions[j].ques + '</div>');
   // loops through answers for each radio button
-  for (var i = 0; i <= 3; i++) {
+  for (var i = 0; i < 3; i++) {
       $(questions[j].divClass).append('<input type="radio"  name="' + questions[j].name + '" value="' + questions[j].ans[i] + '"/><label for="' + labels[i] + '">' + questions[j].ans[i] + '</label>');
   }
   $('.questions').prepend('<hr />');
@@ -177,7 +158,7 @@ var questionDisplay = function() {
   var unAnswered = 0;
   
   // loop through correctArray & radioName to match html elements & answers
-  for (var i = 0; i <= questions.length; i++) {
+  for (var i = 0; i < 10; i++) {
   
       if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === questions[i].correct) {
   
@@ -205,4 +186,3 @@ var questionDisplay = function() {
 
   
           
-});
