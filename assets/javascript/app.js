@@ -81,7 +81,15 @@ $(document).ready(function() {
     name:"teeth",
     correct: "30,000",
     divClass: ".teethLoss"
-  }]
+  },
+  {
+    ques:"Sharks have existed for how long?",
+    ans: [ "50 million years", "100,000 years", "300,000 years", "350 million years"],
+    name: "years",
+    correct: "350 million years",
+    divClass:".millionYears"
+  }
+  ]
   
 
 
@@ -107,7 +115,7 @@ var questionDisplay = function() {
   $(".questions :not('#sub-but')").empty();
 
   // loops through the 9 questions 
-  for (var j = 0; j <= questions.length; j++) {
+  for (var j = 0; j < 10; j++) {
   $('.questions').prepend('<div class="' + questions[j].name + '"></div>');
   $(questions[j].divClass).append('<div class ="ques-title">' + questions[j].ques + '</div>');
   // loops through answers for each radio button
@@ -181,6 +189,7 @@ var questionDisplay = function() {
   
   // once submit is clicked...
   // tests
+  gradeQuiz();
   // stop timer
   countdown();
   // fade out questions
