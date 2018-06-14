@@ -18,42 +18,56 @@
     
     <title>Shark Trivia</title>
   </head>
-  <body>
-    <div class= "bg">
-      <!--Splash Page-->
-      <div class= "container-fluid">
-          
-          <div class= "row justify-content-center" id="splashpage">
-            <div class= "col-xl-8 pt-5">
-                          <div class="jumbotron bg-info" id="mainText">
-                            <h2 class="display-4 text-white text-center">Test Your Shark Smarts!</h2>
-                            <p class="lead bg-info text-white text-center">The sea, once it casts its spell, holds one in its net of wonder forever.</p>
-                            <hr class="my-4 bg-info text-white">
-                            <p class="text-white text-right">Jacques Cousteau</p>
-                            <a class="btn btn-primary btn-lg" id="startButton" href="#" role="button">Start Game!</a>
-                            <a class="btn btn-primary btn-lg" href="http://www.ocearch.org/tracker/mobile/" target="_blank" role="button">Track Sharks Live!</a>
-                          </div>
-                    
-            </div>
+  <body class= "bg">
+    <div id="splashscreen">
+        <div class="splashBox">
+            <h3>Welcome to</h3>
+            <h1>Shark Smarts!</h1>
+            <hr />
+            <p>You have 60 seconds to guess 10 questions.</p>
+            <br />
+            <p>Click To Start</p>
+            <button type="button" id="startButton" class="btn btn-primary black-background white">Take A Bite</button>
+        </div>
+    </div>
 
-          </div>
-            <!--Questions and Answers Page-->
-            <div class= "row justify-content-center" id= "QandA">
-
-
-            </div>
+    <div id="answerScreen">
+        <div class="splashBox2">
+            <h2>How'd it go?</h2>
+            <hr />
+            <p id="correctScreen">Correct Answers: </p>
+            <p id="wrongScreen">Wrong Answers: </p>
+        </div>
+    </div>
 
 
-            <!--Results Page-->
-            <div class= "row justify-content-center" id= "Result">
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="up">Times Up!</h2>
+            <hr />
+            <p>Here's you're score:</p>
+            <p id="correctTimesUp">Correct Answers: </p>
+            <p id="wrongTimesUp">Wrong Answers: </p>
+        </div>
+    </div>
 
+    <div class="container">
+        <header>Shark Smarts!</header>
+        <div class="row timeRemain">Time Remaining:
+            <div id="time-remain">60</div>
+        </div>
 
-              </div>
-      </div>
+        <div class="questions">
+            <button type="button" class="btn btn-primary black-background white" id="sub-but">Submit</button>
+            <!-- end equestions-->
+        </div>
+
+        <!-- Main Container-->
+    </div>
     
 
     
     
-  </div>
+  
 </body>
 </html>
