@@ -45,15 +45,15 @@ body, html {
     padding: 4%;
 }
 .container{
-    height: 90%;
+    height: 95%;
     background-color: navy;
     opacity: 0.8;
     background-size: cover;
-    
+    margin-top: 10px;
     color: aliceblue;
     display: none;
-    margin-bottom: 5%;
-    padding-bottom: 2%;
+    margin-bottom: 5px;
+    
     
     border-radius: 5px;
     padding-left: 10px;
