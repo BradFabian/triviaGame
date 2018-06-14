@@ -48,7 +48,7 @@ body, html {
     height: 90%;
     background-color: navy;
     opacity: 0.5;
-    
+    background-size: cover;
     
     color: aliceblue;
     display: none;
@@ -104,7 +104,23 @@ header {
 }
 
 .questions {
-    font-size: 25px;
+    font-size: 15px;
+    padding-top: 0%;
+    text-align: center;
+    color: coral;
+    opacity: 1;
+    float: right;
+    
+}
+#questions2{
+    clear: right;
+    float: left;
+    font-size: 15px;
+    opacity: 1;
+    margin: 0%;
+    padding-top: 0%;
+    text-align: center;
+    color: coral;
 }
 
 .ques,
